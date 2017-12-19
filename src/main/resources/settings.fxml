@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.3151862464183381" layoutX="155.0" layoutY="86.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #FFE4E1;">
+               <children>
+                  <ImageView fitHeight="261.0" fitWidth="458.0" layoutX="316.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-24.811138916015636" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="424.4000000000001" AnchorPane.topAnchor="-27.0">
+                     <image>
+                        <Image url="@youtube.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="29.0" layoutY="75.0" text="Welcome to" AnchorPane.leftAnchor="29.0">
+                     <font>
+                        <Font name="Century Gothic" size="51.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="752.0" layoutY="48.0" prefHeight="105.0" prefWidth="404.0" text="Analytics" textFill="#a70b0b">
+                     <font>
+                        <Font name="Century Gothic" size="73.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.31594784353059174" layoutX="50.0" layoutY="73.0" prefHeight="489.6" prefWidth="998.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="469.0" prefWidth="699.0">
+                           <children>
+                              <Pane fx:id="paneYoutube" prefHeight="488.0" prefWidth="754.4" style="-fx-background-color: #FFFAFA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Settings:">
+                                       <font>
+                                          <Font name="Consolas Bold" size="47.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="100.0" layoutY="129.0" text="Use cach:" textFill="#c51010">
+                                       <font>
+                                          <Font name="Consolas Bold Italic" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="107.0" layoutY="174.0" text="Save cache?" textFill="#090909">
+                                       <font>
+                                          <Font name="Consolas" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="73.0" layoutY="205.0" prefHeight="38.0" prefWidth="188.0" text="True / False">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="423.0" layoutY="129.0" text="Path to the cache" textFill="#c51010">
+                                       <font>
+                                          <Font name="Consolas Bold Italic" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="472.0" layoutY="174.0" text="[current path]" textFill="#090909">
+                                       <font>
+                                          <Font name="Consolas" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="455.0" layoutY="205.0" prefHeight="38.0" prefWidth="188.0" text="New path">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="146.0" layoutY="301.0" text="Time spent on implementation" textFill="#c51010">
+                                       <font>
+                                          <Font name="Consolas Bold Italic" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="161.0" layoutY="351.0" text="To show the time spent on the task?" textFill="#090909">
+                                       <font>
+                                          <Font name="Consolas" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="259.0" layoutY="394.0" prefHeight="38.0" prefWidth="188.0" text="True / False">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
